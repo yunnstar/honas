@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - html</title>
+  <meta charset="utf-8">
+  <style>
+    body{
+      margin: 0;
+
+    }
+    a{
+      color : black;
+      text-decoration: none;
+    }
+      h1  {
+      font-size: 45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding: 20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+    margin: 0;
+    padding:20px;
+
+
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:33px;
+    }
+    #grid #article{
+      padding-left:25px;
+    }
+    @media(max-width:800px){
+      #grid{
+      display: block;
+    }
+     ol{
+      border-right:none;
+    }
+    h1  {
+      border-bottom:none;
+    }
+    }
+  </style>
+</head>
+<body>
+  <h1><a href="index.html">호나스패밀리</a></h1>
+  <div id="grid">
+   <ol>
+    <li><a href="1.html">조성철</a></li>
+    <li><a href="2.html">윤현아</a></li>
+    <li><a href="3.html">바보들</a></li>
+   </ol>
+   <div id="article">
+     <h2>윤현아</h2>
+     <p>
+      1996년 몇월며칠생인지는 모른다. 조성철의 와이프이며 그냥 바보 멍청이이다. 방금막 양치를 시작한 바보이다
+     </p>
+   </div>
+  </div>
+</body>
+</html>
